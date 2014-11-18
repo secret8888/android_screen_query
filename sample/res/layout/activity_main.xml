@@ -1,0 +1,30 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" 
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="@string/single_clickable" 
+        android:textColor="@android:color/white"
+        android:onClick="onSingleClick"
+        />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="@string/muti_select" 
+        android:textColor="@android:color/white"
+        android:onClick="onMultiClick"
+        />
+
+</LinearLayout>
+

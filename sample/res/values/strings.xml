@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">screen_query_demo</string>
+    <string name="single_clickable">Single Word Clickable</string>
+    <string name="muti_select">Muti Words Select</string>
+    <string name="title_area">Title Arae</string>
+    <string name="tip_area">Tip Area</string>
+    
+    <string name="title_sample">This post is in partnership with Entrepreneur. 
+        The article below was originally published at Entrepreneur.com. 
+        In his recent book, Growth Hacker Marketing, Ryan Holiday explored 
+        how traditional big-budget marketing is being replaced by more effective 
+        small teams (and sometimes individuals) who are using trackable and 
+        scalable tools to grow companies.</string>
+
+    <string name="tip_sample">A baby stroller can make walks through the park a little more fun.
+        一个婴儿车可以让你在公园的散步更有趣。An inflatable pool makes a great playpen for babies.
+        充气水池很适合做婴儿的围栏。Do you believe that anyone can ditch their alarm clock 
+        and become a happy early riser?你相信任何一个人都能把闹钟丢弃并且变成一个快乐的早起者吗？
+        If you can do 100 sit-ups every day, you will have a six-pack abs soon.</string>
+</resources>

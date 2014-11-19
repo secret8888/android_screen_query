@@ -18,6 +18,6 @@ public class MainActivity extends Activity {
 	}
 
 	public void onMultiClick(View view) {
-
+		startActivity(new Intent(this, MultiSelectActivity.class));
 	}
 }

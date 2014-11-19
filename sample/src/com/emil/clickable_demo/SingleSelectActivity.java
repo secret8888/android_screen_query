@@ -17,19 +17,30 @@ public class SingleSelectActivity extends Activity implements
 	@ViewId(R.id.tv_title)
 	private TextView titleView = null;
 
+	@ViewId(R.id.tv_tip)
+	private TextView tipView = null;
+	
+	@ViewId(R.id.tv_result)
+	private TextView resultView = null;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_single_clickable);
 		Injector.inject(this, this);
 		SingleClickableClient.getInstance().setTipSpan(this, titleView,
+				getString(R.string.title_sample), Color.BLUE, Color.WHITE,
+				Color.WHITE, Color.BLACK);
+		
+		SingleClickableClient.getInstance().setTipSpan(this, tipView,
 				getString(R.string.tip_sample), Color.BLUE, Color.WHITE,
 				Color.WHITE, Color.BLACK);
 	}
 
 	@Override
-	public void onSpanbableClick(int textIndex, String spanText) {
+	public void onSpanbableClick(int textIndex, int spanTextPosition, String spanText) {
 		Log.d("TAG", "textIndex : " + textIndex);
 		Log.d("TAG", "spanText : " + spanText);
+		resultView.setText("textIndex : " + textIndex + "\n" + "spanText : " + spanText);
 	}
 }

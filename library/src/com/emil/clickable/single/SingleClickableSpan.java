@@ -48,7 +48,7 @@ public class SingleClickableSpan extends ClickableSpan {
 	private boolean selected;
 
 	/*
-	 * the callback of the method "onClick"
+	 * callback of the method "onClick"
 	 */
 	private OnSpanbableClickListener spanbableClickListener = null;
 	
@@ -74,7 +74,7 @@ public class SingleClickableSpan extends ClickableSpan {
 	@Override
 	public void onClick(View widget) {
 		if(spanbableClickListener != null){
-			spanbableClickListener.onSpanbableClick(textIndex, spanText);
+			spanbableClickListener.onSpanbableClick(textIndex, 0, spanText);
 		}
 	}
 
